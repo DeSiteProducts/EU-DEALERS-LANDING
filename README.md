@@ -1,7 +1,7 @@
-# D-Sight Screeners Landing
+# DeSite Products Landing
 
-Accessible landing page for comparing three D-Sight screener models and
-requesting more information or a quote.
+One-page media kit and product landing page for DeSite Products compact
+portable vibratory screeners.
 
 ## Stack
 
@@ -31,8 +31,8 @@ The production build writes deployable Sites output to `dist/`.
 
 ## Project Notes
 
-- Main page code lives in `app/page.tsx`.
-- Reusable landing components live in `app/components/`.
-- Shared placeholder copy and model data live in `app/lib/landingData.ts`.
-- The hero asset lives in `public/images/d-sight-screener-hero.jpg`.
-- The canonical Sites preview is `public/screenshot.jpeg`.
+- Main entry point: `app/page.tsx`
+- DeSite components: `app/components/desite/`
+- Shared content data: `app/lib/desiteData.ts`
+- Placeholder media paths are visible in the UI and are ready to replace with
+  real product, jobsite, customer, video, and social proof assets.

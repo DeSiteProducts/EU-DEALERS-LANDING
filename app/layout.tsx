@@ -2,22 +2,21 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "D-Sight Screeners | Simple Screening Equipment Comparison",
+  title: "DeSite Products | Compact Portable Vibratory Screeners",
   description:
-    "Compare three D-Sight screener models and request help choosing screening equipment for soil, gravel, compost, and sand.",
+    "Explore DeSite Products compact portable vibratory screeners, built for contractors, landscapers and material producers across North America.",
   keywords: [
-    "D-Sight screeners",
-    "screening equipment",
+    "DeSite Products",
+    "compact portable vibratory screeners",
+    "portable screener",
     "soil screener",
     "gravel screener",
-    "compost screener",
     "contractor equipment",
   ],
   openGraph: {
-    title: "D-Sight Screeners",
+    title: "DeSite Products",
     description:
-      "Simple, reliable screening equipment for contractors, farms, landscaping businesses, and property owners.",
-    images: ["/images/d-sight-screener-hero.jpg"],
+      "Compact portable vibratory screeners for contractors, landscapers, and material producers.",
   },
   icons: {
     icon: "/favicon.svg",
