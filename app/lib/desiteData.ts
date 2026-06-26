@@ -39,8 +39,7 @@ export const differenceItems = [
 export const products = [
   {
     name: "68 ProScreen",
-    description:
-      "Product overview and detailed model information will be added soon.",
+    detailVariant: "proscreen68",
     imageAlt: "DeSite 68 ProScreen screener product photo",
     images: [
       "/images/68/2 (1).png",
@@ -53,10 +52,6 @@ export const products = [
       "/images/68/image (1).png",
       "/images/68/image.png",
     ],
-    specs: "Specs coming soon",
-    capacity: "Capacity details coming soon",
-    equipment: "Recommended equipment details coming soon",
-    applications: "Applications coming soon",
   },
   {
     name: "SLG 78 Grizzly RB",
