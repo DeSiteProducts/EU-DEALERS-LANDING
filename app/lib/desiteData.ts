@@ -35,93 +35,334 @@ export const differenceItems = [
     text: "A practical equipment investment for working crews.",
   },
 ];
+export type ProductVideo = {
+  id: string;
+  title: string;
+};
 
-export const products = [
+export type DesiteProduct = {
+  name: string;
+  detailVariant?: string;
+  description?: string[];
+  imageAlt?: string;
+  images: string[];
+  proscreenHighlights?: {
+    label: string;
+    value: string;
+  }[];
+  videos?: ProductVideo[];
+  materials?: string[];
+  features?: string[];
+  specs?: string;
+  capacity?: string;
+  equipment?: string;
+  applications?: string;
+  specSheet?: string;
+};
+
+export const products: DesiteProduct[] = [
   {
-    name: "68 ProScreen",
-    detailVariant: "proscreen68",
+    name: "68V Vibratory Mini Screener",
+    description: ["Designed for mini equipment with limited lift capacity, the ProScreen 68V is a compact vibratory screener built for practical material screening and recycling."],
+    detailVariant: "DeSite ProScreen",
     imageAlt: "DeSite 68 ProScreen screener product photo",
     images: [
-      "/images/68/2 (1).png",
-      "/images/68/ACTION (1).png",
-      "/images/68/ACTION (3).png",
+      "/images/68/2.png",
+      "/images/68/ACTION1.png",
+      "/images/68/ACTION3.png",
       "/images/68/ACTION.jpg",
-      "/images/68/IMG_0287-1024x768.webp",
-      "/images/68/Screenshot 2024-07-10 at 7.50.02 PM.png",
-      "/images/68/Screenshot 2025-02-18 at 4.11.56 PM.png",
-      "/images/68/image (1).png",
+      "/images/68/IMG.webp",
+      "/images/68/Screenshot1.png",
+      "/images/68/Screenshot2.png",
+      "/images/68/image1.png",
       "/images/68/image.png",
     ],
+    proscreenHighlights: [
+      {
+        label: "Weight",
+        value: "725 kg",
+      },
+      {
+        label: "Bucket Width",
+        value: "Up to 1.7 meters",
+      },
+      {
+        label: "Feed Height",
+        value: "1.8 meters",
+      },
+      {
+        label: "Mesh Range",
+        value: "3 mm to 100 mm",
+      },
+      {
+        label: "Warranty",
+        value: "5 Year Structure Warranty",
+      },
+    ],
+    videos: [
+      {
+        id: "1079537676",
+        title: "68 Pro Screen Full Overview",
+      },
+      {
+        id: "1129558957",
+        title: "DeSite ProScreen 68V product demo video 2",
+      },
+      {
+        id: "892970062",
+        title: "DeSite ProScreen 68V product demo video 3",
+      },
+      {
+        id: "892925987",
+        title: "DeSite ProScreen 68V product demo video 4",
+      },
+    ],
+    materials: [
+      "Soils",
+      "Sand",
+      "Gravels",
+      "Compost",
+      "Erosion Rock",
+    ],
+    features: [
+    "220 Volt single phase (3600rpm) Vibratory System",
+    "45 to 25 degree tilting screen deck",
+    "Coil over spring suspension system",
+    "Bucket and fork transport pockets",
+    "Hot dip zinc coating finish",
+  ],
+
   },
-  {
+   {
     name: "SLG 78 Grizzly RB",
-    description:
-      "Product overview and detailed model information will be added soon.",
+    description: ["DeSite’s spring suspension grizzly makes it the best compact grizzly screener on the market. Designed for compact equipment the screen deck feed height is under 2.4 meters "," The 78 Grizzly with riser box weighs in at 750kg and comes with fork pockets built into the screeners structure for easy onsite transport. "," Backed by our 5 Year Structure Warranty you can count on the SLG 78 Grizzly to be rugged built equipment."],
+    detailVariant: "DeSite Grizzly",
     imageAlt: "SLG 78 Grizzly RB screener product photo",
     images: [],
-    specs: "Specs coming soon",
-    capacity: "Capacity details coming soon",
-    equipment: "Recommended equipment details coming soon",
-    applications: "Applications coming soon",
+    proscreenHighlights: [
+      {
+        label: "Weight",
+        value: "",
+      },
+      {
+        label: "Bucket Width",
+        value: "",
+      },
+      {
+        label: "Feed Height",
+        value: "",
+      },
+      {
+        label: "Mesh Range",
+        value: "50 mm to 100 mm",
+      },
+      {
+        label: "Warranty",
+        value: "5 Year Structure Warranty",
+      },
+    ],
+    videos: [],
+    materials: [
+      "Dirt",
+      "Gravels",
+      "Erosion Rock",
+    ],
+    features: [
+    "Self cleaning spring suspension system",
+    "Quick disconnect riser box",
+    "4 inch nylon tiedown straps",
+    "Side tensioning mesh system",
+    "Available mesh sizes 50, 75, and 100mm",
+  ],
+
   },
   {
     name: "SLG 78 Grizzly",
-    description:
-      "Product overview and detailed model information will be added soon.",
+    description: ["Product overview and detailed model information will be added soon."],
+    detailVariant: "DeSite Grizzly",
     imageAlt: "SLG 78 Grizzly screener product photo",
     images: [
-      "/images/78grizzly/20240808_134553.jpg",
+      "/images/78grizzly/2.jpg",
       "/images/78grizzly/Default.JPG",
-      "/images/78grizzly/FOTO IN ACTION (1).jpg",
-      "/images/78grizzly/FOTO IN ACTION (2).jpg",
-      "/images/78grizzly/FOTO IN ACTION.jpg",
-      "/images/78grizzly/IMG_3946.jpg",
-      "/images/78grizzly/PRODUCT IMAGE (1).jpg",
+      "/images/78grizzly/FOTOINACTION1.jpg",
+      "/images/78grizzly/FOTOINACTION2.jpg",
+      "/images/78grizzly/FOTOINACTION.jpg",
+      "/images/78grizzly/IMG3946.jpg",
+      "/images/78grizzly/PRODUCTIMAGE.jpg",
       "/images/78grizzly/image000004.jpg",
       "/images/78grizzly/image000005.jpg",
       "/images/78grizzly/image00007.jpg",
     ],
-    specs: "Specs coming soon",
-    capacity: "Capacity details coming soon",
-    equipment: "Recommended equipment details coming soon",
-    applications: "Applications coming soon",
+    proscreenHighlights: [
+      {
+        label: "Weight",
+        value: "",
+      },
+      {
+        label: "Bucket Width",
+        value: "",
+      },
+      {
+        label: "Feed Height",
+        value: "",
+      },
+      {
+        label: "Mesh Range",
+        value: "",
+      },
+      {
+        label: "Warranty",
+        value: "5 Year Structure Warranty",
+      },
+      
+    ],
+    videos: [
+       {
+        id: "1090497018",
+        title: "SLG 78 Spring Loaded Grizzly Screening Sand",
+      },
+      {
+        id: "1001990400",
+        title: "SLG 78 Spring Loaded Grizzly Screening Gravel",
+      },
+      {
+        id: "1123779281",
+        title: "78 GRIZZLY",
+      },
+       {
+        id: "1003281077",
+        title: "SLG 78 Spring Loaded Grizzly Screening Overview",
+      },
+    ],
+    materials: [
+      "coming soon"
+    ],
+    features: [
+    "coming soon"
+  ],
+
   },
   {
     name: "SLG 56 Mini",
-    description:
-      "Product overview and detailed model information will be added soon.",
+    description: ["Product overview and detailed model information will be added soon."],
+    detailVariant: "DeSite Grizzly",
     imageAlt: "SLG 56 Mini screener product photo",
     images: [
-      "/images/56/PRODUCT IMAGE.png",
-      "/images/56/IMG_3973.jpg",
-      "/images/56/image (3).png",
-      "/images/56/RUBBER SCREEN DECK SKIRTS.jpg",
-      "/images/56/image (2).png",
+     "/images/56/PRODUCTIMAGE.png",
+      "/images/56/IMG3.jpg",
+      "/images/56/image3.png",
+      "/images/56/RUBBERSCREENDECKSKIRTS.jpg",
+      "/images/56/image2.png",
       "/images/56/PNG0.png",
-      "/images/56/image (1).png",
-      "/images/56/C SPRING SUSPENSION.jpg",
-      "/images/56/IMG_4778.jpg",
-      "/images/56/HITCH TUBE.jpg",
+      "/images/56/image1.png",
+      "/images/56/CSPRINGSUSPENSION.jpg",
+      "/images/56/IMG4.jpg",
+      "/images/56/HITCHTUBE.jpg",
       "/images/56/WHEELS.jpg",
-      "/images/56/PRODUCT IMAGE  (2).jpg",
+      "/images/56/PRODUCTIMAGE2.jpg",
       "/images/56/image.png",
     ],
-    specs: "Specs coming soon",
-    capacity: "Capacity details coming soon",
-    equipment: "Recommended equipment details coming soon",
-    applications: "Applications coming soon",
+    proscreenHighlights: [
+      {
+        label: "Weight",
+        value: "",
+      },
+      {
+        label: "Bucket Width",
+        value: "",
+      },
+      {
+        label: "Feed Height",
+        value: "",
+      },
+      {
+        label: "Mesh Range",
+        value: "",
+      },
+      {
+        label: "Warranty",
+        value: "5 Year Structure Warranty",
+      },
+    ],
+    videos: [
+      {
+        id: "1006286529",
+        title: "SLG 56 Towable Spring Loaded Grizzly | Overview",
+      },
+      {
+        id: "1125998905",
+        title: "SLG 56 Towable Spring Loaded Grizzly Testimonial",
+      },
+      {
+        id: "970371995",
+        title: "DESITE SLG - 56 MINI",
+      },
+      {
+        id: "970809028",
+        title: "SLG 56 Towable Spring Loaded Grizzly | Disconnect Hitch System",
+      },
+    ],
+    materials: [
+      "coming soon"
+    ],
+    features: [
+    "coming soon"
+  ],
+
   },
-  {
+ {
     name: "SLG 48 Mini",
-    description:
-      "Product overview and detailed model information will be added soon.",
+    description: ["Product overview and detailed model information will be added soon."],
+    detailVariant: "DeSite Grizzly",
     imageAlt: "SLG 48 Mini screener product photo",
-    images: [],
-    specs: "Specs coming soon",
-    capacity: "Capacity details coming soon",
-    equipment: "Recommended equipment details coming soon",
-    applications: "Applications coming soon",
+    images: [
+      "/images/48/48.webp",
+      "/images/48/48image.webp",
+      "/images/48/48Suspension.webp",
+      "/images/48/wheels.webp",
+      "/images/48/48InAction1.webp",
+      "/images/48/48InAction2.webp",
+      "/images/48/48InAction3.webp",
+      "/images/48/48InAction4.webp",
+      
+    ],
+    proscreenHighlights: [
+      {
+        label: "Weight",
+        value: "",
+      },
+      {
+        label: "Bucket Width",
+        value: "",
+      },
+      {
+        label: "Feed Height",
+        value: "",
+      },
+      {
+        label: "Mesh Range",
+        value: "",
+      },
+      {
+        label: "Warranty",
+        value: "5 Year Structure Warranty",
+      },
+    ],
+    videos: [
+      {
+        id: "945966711",
+        title: "DESITE SLG - 48 MINI",
+      },
+    ],
+    materials: [
+      "coming soon"
+    ],
+    features: [
+    "coming soon"
+  ],
+
   },
+
 ];
 
 export const videos = [

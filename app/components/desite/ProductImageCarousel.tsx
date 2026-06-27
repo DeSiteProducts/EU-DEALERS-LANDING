@@ -55,7 +55,7 @@ export function ProductImageCarousel({
             type="button"
             onClick={goToPrevious}
           >
-            <span aria-hidden="true">‹</span>
+            <span aria-hidden="true">{"<"}</span>
           </button>
           <span aria-live="polite">
             {activeIndex + 1} / {images.length}
@@ -66,7 +66,7 @@ export function ProductImageCarousel({
             type="button"
             onClick={goToNext}
           >
-            <span aria-hidden="true">›</span>
+            <span aria-hidden="true">{">"}</span>
           </button>
         </div>
       ) : null}

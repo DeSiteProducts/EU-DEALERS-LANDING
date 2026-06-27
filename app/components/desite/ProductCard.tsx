@@ -1,72 +1,22 @@
+import type { DesiteProduct } from "../../lib/desiteData";
 import { ProductImageCarousel } from "./ProductImageCarousel";
 import { PrimaryButton, SecondaryButton } from "./Buttons";
 
-const proscreenHighlights = [
-  { label: "Weight", value: "725kg" },
-  { label: "Bucket Capacity", value: "Up to 1.7 meters" },
-  { label: "Feed Height", value: "1.8 meters" },
-  { label: "Mesh Range", value: "3mm to 100mm" },
-  { label: "Warranty", value: "5 Year Structure Warranty" },
-];
 
-const proscreenMaterials = [
-  "Soils",
-  "Sand",
-  "Gravels",
-  "Compost",
-  "Erosion Rock",
-];
-
-const proscreenFeatures = [
-  "220 Volt single phase (3600rpm) Vibratory System",
-  "45 to 25 degree tilting screen deck",
-  "Coil over spring suspension system",
-  "Bucket and fork transport pockets",
-  "Hot dip zinc coating finish",
-];
-
-const proscreenVideos = [
-  { id: "1197839645", title: "DeSite ProScreen 68V product demo video 1" },
-  { id: "892414970", title: "DeSite ProScreen 68V product demo video 2" },
-  { id: "892970062", title: "DeSite ProScreen 68V product demo video 3" },
-  { id: "892925987", title: "DeSite ProScreen 68V product demo video 4" },
-];
-
-type Product = {
-  name: string;
-  detailVariant?: "proscreen68";
-  description?: string;
-  imageAlt?: string;
-  images: string[];
-  specs?: string;
-  capacity?: string;
-  equipment?: string;
-  applications?: string;
-  specSheet?: string;
-};
 
 export function ProductCard({
   product,
 }: {
-  product: Product;
+  product: DesiteProduct;
 }) {
-  if (product.detailVariant === "proscreen68") {
-    return <ProScreenProductCard product={product} />;
-  }
 
-  return (
-    <article className="product-card">
-      <ProductImageCarousel
-        imageAlt={product.imageAlt}
-        images={product.images}
-        label={product.name}
-      />
-      <DefaultProductDetails product={product} />
-    </article>
-  );
+  return <ProScreenProductCard product={product} />;
+
+
+
 }
 
-function ProScreenProductCard({ product }: { product: Product }) {
+function ProScreenProductCard({ product }: { product: DesiteProduct }) {
   return (
     <article className="product-card proscreen-card">
       <div className="proscreen-top">
@@ -77,16 +27,14 @@ function ProScreenProductCard({ product }: { product: Product }) {
         />
         <div className="proscreen-summary">
           <div className="proscreen-header">
-            <h3>DeSite ProScreen</h3>
-            <p>68V Vibratory Mini Screener</p>
+            <h3>{product.detailVariant}</h3>
+            <p>{product.name}</p>
           </div>
 
           <div className="proscreen-intro">
-            <p>
-              Designed for mini equipment with limited lift capacity, the
-              ProScreen 68V is a compact vibratory screener built for practical
-              material screening and recycling.
-            </p>
+            {product.description?.map((paragraph) => (
+              <p key={paragraph}>{paragraph}</p>
+            ))}
           </div>
         </div>
       </div>
@@ -98,7 +46,7 @@ function ProScreenProductCard({ product }: { product: Product }) {
         >
           <h4 id="proscreen-key-specs">Key Specs</h4>
           <dl className="proscreen-highlights">
-            {proscreenHighlights.map((item) => (
+            {product.proscreenHighlights?.map((item) => (
               <div key={item.label}>
                 <dt>{item.label}</dt>
                 <dd>{item.value}</dd>
@@ -110,7 +58,7 @@ function ProScreenProductCard({ product }: { product: Product }) {
         <section className="proscreen-videos" aria-labelledby="proscreen-videos">
           <h4 id="proscreen-videos">Videos</h4>
           <div className="proscreen-video-grid">
-            {proscreenVideos.map((video) => (
+            {product.videos?.map((video) => (
               <div className="proscreen-video-frame" key={video.id}>
                 <iframe
                   allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
@@ -128,11 +76,11 @@ function ProScreenProductCard({ product }: { product: Product }) {
         <div className="proscreen-list-grid">
           <ProductFeatureList
             title="Screen and Recycle"
-            items={proscreenMaterials}
+            items={product.materials ?? []}
           />
           <ProductFeatureList
             title="Screener Features"
-            items={proscreenFeatures}
+            items={product.features ?? []}
           />
         </div>
       </div>
@@ -159,7 +107,7 @@ function ProductFeatureList({
   );
 }
 
-function DefaultProductDetails({ product }: { product: Product }) {
+function DefaultProductDetails({ product }: { product: DesiteProduct }) {
   return (
     <div className="product-content">
       <h3>{product.name}</h3>
