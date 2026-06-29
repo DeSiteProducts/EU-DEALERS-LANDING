@@ -1,16 +1,16 @@
 @import "tailwindcss";
 
 :root {
-  --desite-navy: #ff2d49;
-  --desite-blue: #d80621;
-  --desite-white: #050505;
-  --desite-bg: #111111;
-  --desite-text: #f4f4f5;
-  --desite-ink: #ffffff;
-  --desite-border: #3a1118;
-  --desite-soft-blue: #210309;
-  --desite-shadow: 0 18px 44px rgba(216, 6, 33, 0.2);
-  --desite-shadow-strong: 0 24px 64px rgba(216, 6, 33, 0.36);
+  --desite-navy: #30ab33;
+  --desite-blue: #30ab33;
+  --desite-white: #ffffff;
+  --desite-bg: #f6fbf6;
+  --desite-text: #171717;
+  --desite-ink: #050505;
+  --desite-border: rgba(48, 171, 51, 0.24);
+  --desite-soft-blue: #eaf8eb;
+  --desite-shadow: 0 18px 44px rgba(48, 171, 51, 0.18);
+  --desite-shadow-strong: 0 24px 64px rgba(48, 171, 51, 0.3);
 }
 
 @theme inline {
@@ -37,7 +37,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.55;
   text-rendering: optimizeLegibility;
-  color-scheme: dark;
+  color-scheme: light;
 }
 
 img {
@@ -112,10 +112,12 @@ h3 {
   position: sticky;
   top: 0;
   z-index: 40;
-  border-bottom: 1px solid rgba(216, 6, 33, 0.28);
-  background: rgba(5, 5, 5, 0.97);
+  border-bottom: 1px solid rgba(48, 171, 51, 0.28);
+  background: rgba(255, 255, 255, 0.97);
   backdrop-filter: blur(12px);
 }
+
+
 
 .nav-shell {
   min-height: 88px;
@@ -183,21 +185,21 @@ h3 {
 .play-button:focus-visible,
 input:focus-visible,
 textarea:focus-visible {
-  outline: 4px solid rgba(216, 6, 33, 0.82);
+  outline: 4px solid rgba(48, 171, 51, 0.82);
   outline-offset: 4px;
 }
 
 .nav-contact {
   background: var(--desite-navy);
   color: var(--desite-ink);
-  box-shadow: 0 10px 24px rgba(216, 6, 33, 0.32);
+  box-shadow: 0 10px 24px rgba(48, 171, 51, 0.32);
 }
 
 .nav-contact:hover,
 .desite-button-primary:hover,
 .carousel-button:hover,
 .play-button:hover {
-  background: #ff1f3d;
+  background: #30ab33;
 }
 
 .mobile-nav {
@@ -206,7 +208,7 @@ textarea:focus-visible {
 
 .desite-hero {
   background:
-    linear-gradient(120deg, rgba(216, 6, 33, 0.12), rgba(255, 45, 73, 0.08)),
+    linear-gradient(120deg, rgba(48, 171, 51, 0.12), rgba(48, 171, 51, 0.08)),
     var(--desite-white);
   padding: 90px 0 78px;
 }
@@ -276,7 +278,7 @@ textarea:focus-visible {
 }
 
 .desite-button-primary:hover {
-  box-shadow: 0 14px 28px rgba(216, 6, 33, 0.36);
+  box-shadow: 0 14px 28px rgba(48, 171, 51, 0.36);
 }
 
 .desite-button-secondary {
@@ -287,7 +289,7 @@ textarea:focus-visible {
 
 .desite-button-secondary:hover {
   background: var(--desite-soft-blue);
-  border-color: #ff2d49;
+  border-color: #30ab33;
 }
 
 .desite-button-disabled {
@@ -325,11 +327,11 @@ textarea:focus-visible {
   justify-content: center;
   gap: 14px;
   overflow: hidden;
-  border: 1px solid rgba(216, 6, 33, 0.28);
+  border: 1px solid rgba(48, 171, 51, 0.28);
   border-radius: 8px;
   background:
-    linear-gradient(135deg, rgba(5, 5, 5, 0.9), rgba(33, 3, 9, 0.9)),
-    radial-gradient(circle at top right, rgba(216, 6, 33, 0.22), transparent 34%),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.94), rgba(234, 248, 235, 0.92)),
+    radial-gradient(circle at top right, rgba(48, 171, 51, 0.18), transparent 34%),
     var(--desite-bg);
   padding: 30px;
   color: var(--desite-navy);
@@ -346,7 +348,7 @@ textarea:focus-visible {
   position: relative;
   min-height: 260px;
   overflow: hidden;
-  border: 1px solid rgba(216, 6, 33, 0.22);
+  border: 1px solid rgba(48, 171, 51, 0.22);
   border-radius: 8px;
   background: var(--desite-bg);
   box-shadow: var(--desite-shadow);
@@ -483,7 +485,7 @@ textarea:focus-visible {
 }
 
 .difference-card:hover {
-  border-color: rgba(216, 6, 33, 0.7);
+  border-color: rgba(48, 171, 51, 0.7);
   box-shadow: var(--desite-shadow-strong);
 }
 
@@ -505,10 +507,10 @@ textarea:focus-visible {
   width: 82px;
   min-height: 82px;
   margin: 0 auto 20px;
-  border: 1px solid rgba(216, 6, 33, 0.34);
+  border: 1px solid rgba(48, 171, 51, 0.34);
   border-radius: 8px;
   background:
-    linear-gradient(135deg, rgba(216, 6, 33, 0.26), rgba(5, 5, 5, 0.92)),
+    linear-gradient(135deg, rgba(48, 171, 51, 0.26), rgba(255, 255, 255, 0.92)),
     var(--desite-soft-blue);
 }
 
@@ -592,6 +594,7 @@ textarea:focus-visible {
 }
 
 .proscreen-summary {
+  border: 1px solid var(--desite-soft-blue);
   display: grid;
   align-content: start;
   gap: 26px;
@@ -644,7 +647,7 @@ textarea:focus-visible {
 }
 
 .proscreen-highlights div {
-  border: 1px solid rgba(216, 6, 33, 0.22);
+  border: 1px solid rgba(48, 171, 51, 0.22);
   border-radius: 8px;
   background: var(--desite-bg);
   padding: 14px 16px;
@@ -658,6 +661,12 @@ textarea:focus-visible {
   text-transform: uppercase;
 }
 
+.price{
+  color: var(--desite-navy);
+  font-weight: 900;
+  font-size: 30px;
+  text-align: center;
+}
 .proscreen-highlights dd {
   margin: 0;
   color: var(--desite-navy);
@@ -686,10 +695,10 @@ textarea:focus-visible {
   position: relative;
   aspect-ratio: 16 / 9;
   overflow: hidden;
-  border: 1px solid rgba(216, 6, 33, 0.22);
+  border: 1px solid rgba(48, 171, 51, 0.22);
   border-radius: 8px;
   background: var(--desite-bg);
-  box-shadow: 0 14px 30px rgba(216, 6, 33, 0.26);
+  box-shadow: 0 14px 30px rgba(48, 171, 51, 0.26);
 }
 
 .proscreen-video-frame iframe {
@@ -749,7 +758,7 @@ textarea:focus-visible {
   height: 9px;
   border-radius: 999px;
   background: var(--desite-blue);
-  box-shadow: 0 0 0 4px rgba(216, 6, 33, 0.2);
+  box-shadow: 0 0 0 4px rgba(48, 171, 51, 0.2);
 }
 
 .product-carousel,
@@ -785,19 +794,19 @@ textarea:focus-visible {
   color: var(--desite-ink);
   font-weight: 900;
   cursor: pointer;
-  color:#ffffff !important;
+  color: #050505 !important;
   transition:
     background-color 160ms ease,
     transform 160ms ease,
     box-shadow 160ms ease;
 }
 .carousel-button span {
-  color: #fff !important;
+  color: #050505 !important;
 }
 
 .carousel-button:hover,
 .play-button:hover {
-  box-shadow: 0 12px 26px rgba(216, 6, 33, 0.36);
+  box-shadow: 0 12px 26px rgba(48, 171, 51, 0.36);
 }
 
 .carousel-button span {
@@ -931,7 +940,7 @@ textarea:focus-visible {
   min-height: 48px;
   display: inline-flex;
   align-items: center;
-  border: 1px solid rgba(216, 6, 33, 0.22);
+  border: 1px solid rgba(48, 171, 51, 0.22);
   border-radius: 8px;
   background: var(--desite-bg);
   padding: 10px 14px;
@@ -943,10 +952,10 @@ textarea:focus-visible {
   position: relative;
   min-height: 430px;
   overflow: hidden;
-  border: 1px solid rgba(216, 6, 33, 0.28);
+  border: 1px solid rgba(48, 171, 51, 0.28);
   border-radius: 8px;
   background:
-    linear-gradient(135deg, rgba(5, 5, 5, 0.92), rgba(33, 3, 9, 0.96)),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.92), rgba(234, 248, 235, 0.96)),
     var(--desite-bg);
 }
 
@@ -963,13 +972,13 @@ textarea:focus-visible {
 
 .dealer-map-grid {
   fill: none;
-  stroke: rgba(216, 6, 33, 0.1);
+  stroke: rgba(48, 171, 51, 0.1);
   stroke-width: 2;
 }
 
 .dealer-map-land {
-  fill: rgba(216, 6, 33, 0.12);
-  stroke: rgba(216, 6, 33, 0.22);
+  fill: rgba(48, 171, 51, 0.12);
+  stroke: rgba(48, 171, 51, 0.22);
   stroke-width: 2;
 }
 
@@ -987,8 +996,8 @@ textarea:focus-visible {
   border-radius: 999px;
   background: var(--desite-blue);
   box-shadow:
-    0 0 0 7px rgba(216, 6, 33, 0.24),
-    0 12px 24px rgba(216, 6, 33, 0.36);
+    0 0 0 7px rgba(48, 171, 51, 0.24),
+    0 12px 24px rgba(48, 171, 51, 0.36);
   cursor: pointer;
   transition:
     background-color 160ms ease,
@@ -1010,8 +1019,8 @@ textarea:focus-visible {
 .dealer-marker-active {
   background: var(--desite-white);
   box-shadow:
-    0 0 0 8px rgba(216, 6, 33, 0.36),
-    0 16px 30px rgba(216, 6, 33, 0.44);
+    0 0 0 8px rgba(48, 171, 51, 0.36),
+    0 16px 30px rgba(48, 171, 51, 0.44);
   transform: translate(-50%, -50%) scale(1.08);
 }
 
@@ -1020,7 +1029,7 @@ textarea:focus-visible {
   z-index: 2;
   max-width: min(280px, calc(100% - 32px));
   transform: translate(-50%, calc(-100% - 28px));
-  border: 1px solid rgba(216, 6, 33, 0.22);
+  border: 1px solid rgba(48, 171, 51, 0.22);
   border-radius: 8px;
   background: var(--desite-white);
   padding: 12px 14px;
@@ -1054,7 +1063,7 @@ textarea:focus-visible {
 }
 
 .contact-section {
-  background: #050505 !important;
+  background: var(--desite-white) !important;
   color: var(--desite-ink);
 }
 
@@ -1065,13 +1074,16 @@ textarea:focus-visible {
   align-items: start;
 }
 
-.contact-section h2,
-.contact-section .section-kicker {
+.contact-section h2 {
   color: var(--desite-ink);
 }
 
+.contact-section .section-kicker {
+  color: var(--desite-navy);
+}
+
 .contact-copy p {
-  color: rgba(255, 255, 255, 0.92);
+  color: var(--desite-text);
   font-size: 1.12rem;
 }
 
@@ -1086,11 +1098,11 @@ textarea:focus-visible {
 }
 
 .desite-form {
-  border: 1px solid rgba(216, 6, 33, 0.28);
+  border: 1px solid rgba(48, 171, 51, 0.28);
   border-radius: 8px;
   background: var(--desite-white);
   padding: 34px;
-  box-shadow: 0 22px 52px rgba(216, 6, 33, 0.32);
+  box-shadow: 0 22px 52px rgba(48, 171, 51, 0.28);
 }
 
 .form-grid {
@@ -1127,7 +1139,7 @@ textarea {
 input:focus,
 textarea:focus {
   border-color: var(--desite-navy);
-  box-shadow: 0 0 0 4px rgba(216, 6, 33, 0.22);
+  box-shadow: 0 0 0 4px rgba(48, 171, 51, 0.22);
 }
 
 textarea {
@@ -1137,7 +1149,7 @@ textarea {
 
 input::placeholder,
 textarea::placeholder {
-  color: #bdbdbd;
+  color: #5f6f60;
 }
 
 .form-submit {
@@ -1472,7 +1484,7 @@ textarea::placeholder {
     display: inline-flex;
     align-items: center;
     border-radius: 8px;
-    background: rgba(5, 5, 5, 0.78);
+    background: rgba(48, 171, 51, 0.1);
     padding: 8px 10px;
   }
 }

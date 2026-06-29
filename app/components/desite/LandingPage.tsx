@@ -41,7 +41,7 @@ export function LandingPage() {
           </details>
         </div>
       </header>
-      <main>
+      <main >
         <HeroSection />
         <ProductsSection />
         <MissionSection />

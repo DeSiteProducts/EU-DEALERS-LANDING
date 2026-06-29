@@ -5,7 +5,7 @@ export const navItems = [
   { label: "Videos", href: "#videos" },
   { label: "Stories", href: "#stories" },
   { label: "Downloads", href: "#downloads" },
-  { label: "Contact", href: "#contact" },
+  
 ];
 
 export const differenceItems = [
@@ -58,6 +58,8 @@ export type DesiteProduct = {
   equipment?: string;
   applications?: string;
   specSheet?: string;
+  SuggestedRetailPrice?: string;
+  CostforStockingDealers?: string; 
 };
 
 export const products: DesiteProduct[] = [
@@ -131,6 +133,8 @@ export const products: DesiteProduct[] = [
     "Bucket and fork transport pockets",
     "Hot dip zinc coating finish",
   ],
+  SuggestedRetailPrice: "5,300",
+  CostforStockingDealers: "3,700",
 
   },
    {
@@ -174,6 +178,9 @@ export const products: DesiteProduct[] = [
     "Side tensioning mesh system",
     "Available mesh sizes 50, 75, and 100mm",
   ],
+  SuggestedRetailPrice: "5,700",
+  CostforStockingDealers: "4,000",
+
 
   },
   {
@@ -240,7 +247,7 @@ export const products: DesiteProduct[] = [
     features: [
     "coming soon"
   ],
-
+ 
   },
   {
     name: "SLG 56 Mini",

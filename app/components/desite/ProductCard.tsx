@@ -28,6 +28,22 @@ function ProScreenProductCard({ product }: { product: DesiteProduct }) {
             {product.description?.map((paragraph) => (
               <p key={paragraph}>{paragraph}</p>
             ))}
+            {product.SuggestedRetailPrice && (
+              <>
+              <p>
+                <strong>Suggested Retail Price</strong> 
+              </p>
+              <span className="price">{product.SuggestedRetailPrice} <small>Euros</small></span>
+              </>
+            )}
+            {product.CostforStockingDealers && (
+               <>
+              <p>
+                <strong>Cost for Stocking Dealers</strong> 
+              </p>
+              <span className="price">{product.CostforStockingDealers} <small>Euros</small></span>
+              </>
+            )}
           </div>
         </div>
       </div>
