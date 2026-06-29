@@ -7,12 +7,8 @@ export function HeroSection() {
       <div className="desite-container hero-layout">
         <div className="hero-copy">
           <h1 id="desite-hero-title">DeSite Products</h1>
-          <p className="hero-tagline">
-            North America&apos;s #1 Compact Portable Vibratory Screener
-          </p>
           <p className="hero-intro">
-            Compact screeners built for contractors, landscapers, and material
-            producers who need dependable production in the field.
+            DeSite Products designs and manufactures compact portable vibratory screeners built for contractors, landscapers, and material producers. Every machine is field-tested in real-world conditions to maximize production, reduce downtime, and deliver long-term value.
           </p>
           <div className="hero-actions">
             <PrimaryButton href="#products">Explore Screeners</PrimaryButton>
