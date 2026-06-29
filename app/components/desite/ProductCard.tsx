@@ -48,6 +48,18 @@ function ProScreenProductCard({ product }: { product: DesiteProduct }) {
           </dl>
         </section>
 
+  
+        <div className="proscreen-list-grid">
+          <ProductFeatureList
+            title="Screen and Recycle"
+            items={product.materials ?? []}
+          />
+          <ProductFeatureList
+            title="Screener Features"
+            items={product.features ?? []}
+          />
+        </div>
+
         <section className="proscreen-videos" aria-labelledby="proscreen-videos">
           <h4 id="proscreen-videos">Videos</h4>
           <div className="proscreen-video-grid">
@@ -65,17 +77,6 @@ function ProScreenProductCard({ product }: { product: DesiteProduct }) {
             ))}
           </div>
         </section>
-
-        <div className="proscreen-list-grid">
-          <ProductFeatureList
-            title="Screen and Recycle"
-            items={product.materials ?? []}
-          />
-          <ProductFeatureList
-            title="Screener Features"
-            items={product.features ?? []}
-          />
-        </div>
       </div>
     </article>
   );

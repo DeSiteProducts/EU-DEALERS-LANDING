@@ -6,14 +6,11 @@ export function HeroSection() {
     <section className="desite-hero" id="home" aria-labelledby="desite-hero-title">
       <div className="desite-container hero-layout">
         <div className="hero-copy">
-          <h1 id="desite-hero-title">DeSite Products</h1>
+          <h1 id="desite-hero-title">DeSite Mini Screeners</h1>
           <p className="hero-intro">
-            DeSite Products designs and manufactures compact portable vibratory screeners built for contractors, landscapers, and material producers. Every machine is field-tested in real-world conditions to maximize production, reduce downtime, and deliver long-term value.
+            DeSite Products designs and manufactures screeers we build vibratory screeners and we build grizzly screeners. Designed to perform, built to last, DeSite Screeners come with a 5 year warranty. 
           </p>
-          <div className="hero-actions">
-            <PrimaryButton href="#products">Explore Screeners</PrimaryButton>
-            <SecondaryButton href="#contact">Contact DeSite</SecondaryButton>
-          </div>
+         
         </div>
         <ImagePlaceholder
           label="Hero image coming soon"

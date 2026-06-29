@@ -63,7 +63,7 @@ export type DesiteProduct = {
 export const products: DesiteProduct[] = [
   {
     name: "68V Vibratory Mini Screener",
-    description: ["Designed for mini equipment with limited lift capacity, the ProScreen 68V is a compact vibratory screener built for practical material screening and recycling."],
+    description: ["Designed with mini equipment with limited lift capacity in mind the 68V weighs in at 725kg","It can accommodate buckets up to 1.7 meters.","Screener feed height height is 1.8 meters","Screen mesh available sizes from 3mm to 100mm","5 Year Structure Warranty"],
     detailVariant: "DeSite ProScreen",
     imageAlt: "DeSite 68 ProScreen screener product photo",
     images: [
